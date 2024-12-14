@@ -1,0 +1,193 @@
+/* General App Container */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  color: #333;
+}
+
+/* Friend List */
+.friend-list {
+  margin: 20px 0;
+}
+
+/* No Friends Message */
+.no-friends {
+  color: #888;
+  font-style: italic;
+}
+
+/* Friend Card */
+.friend-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.friend-card h2 {
+  font-size: 18px;
+  color: #555;
+}
+
+.friend-card p {
+  color: #777;
+  margin: 5px 0;
+}
+
+.friend-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.select-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add Friend Form */
+.add-friend-form {
+  margin: 20px 0;
+  text-align: left;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-friend-form span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-friend-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+/* Toggle Button */
+.toggle-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; 
+}
+
+.split-bill-form {
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.split-bill-form h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.split-bill-form span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.split-bill-form input,
+.split-bill-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.split-bill-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.split-bill-form button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.split-bill-form button:hover {
+  background-color: #0056b3;
+}
+
+.split-bill-form .close-button {
+  background-color: #dc3545;
+}
+
+.split-bill-form .close-button:hover {
+  background-color: #c82333;
+}
