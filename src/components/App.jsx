@@ -6,7 +6,7 @@ import Friend from "./Friend";
 function App() {
   const [click, setClick] = useState(false);
   const [friends, setFriends] = useState([]);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(null);
   const [currentFriend, setCurrentFriend] = useState({});
 
   return (
@@ -20,17 +20,19 @@ function App() {
               name={friend.name}
               ImageUrl={friend.ImageUrl}
               amount={friend.amount}
+              active={active}
               setActive={setActive}
               setCurrentFriend={setCurrentFriend}
               friends={friends}
               setFriends={setFriends}
+              num={index}
             />
           ))
         ) : (
           <p className="no-friends">No friends added yet!</p>
         )}
       </div>
-      {active && currentFriend.name && (
+      {active !== null && currentFriend.name && (
         <Form
           name={currentFriend.name}
           amount={currentFriend.amount}

@@ -2,21 +2,20 @@ export default function Friend({
   name,
   ImageUrl,
   amount,
+
   setActive,
   setCurrentFriend,
   friends,
   setFriends,
+  num,
+  active,
 }) {
   function handleSelect() {
-    const Friend = {
-      name,
-      ImageUrl,
-      amount,
-    };
-
-    setCurrentFriend(Friend);
-    setActive((a) => !a);
+    const isSelected = active === num;
+    setActive(isSelected ? null : num);
+    setCurrentFriend(isSelected ? {} : { name, ImageUrl, amount });
   }
+
   function handleRemove() {
     const updatedFriends = friends.filter((friend) => friend.name !== name);
     setFriends(updatedFriends);

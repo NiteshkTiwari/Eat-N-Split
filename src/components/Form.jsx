@@ -8,6 +8,11 @@ export default function Form({ name, amount, friends, setFriends, setActive }) {
   function handleSubmit(e) {
     e.preventDefault();
 
+    if (!bill || !yourExpense) {
+      alert("Please enter the Bill and your Expense!!!");
+      return;
+    }
+
     if (yourExpense <= 0 || yourExpense >= bill) {
       alert("Your expense must be greater than 0 and less than the bill.");
       return;
@@ -27,7 +32,7 @@ export default function Form({ name, amount, friends, setFriends, setActive }) {
     );
 
     setFriends(updatedFriends);
-    setActive(false);
+    setActive(null);
   }
 
   const friendExpense = bill - yourExpense;
@@ -65,7 +70,7 @@ export default function Form({ name, amount, friends, setFriends, setActive }) {
           <button
             type="button"
             className="close-button"
-            onClick={() => setActive(false)}
+            onClick={() => setActive(null)}
           >
             Close
           </button>
