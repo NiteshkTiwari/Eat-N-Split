@@ -39,6 +39,7 @@ function App() {
           setFriends={setFriends}
           setActive={setActive}
           friends={friends}
+          key={currentFriend.name}
         />
       )}
       {click && (
